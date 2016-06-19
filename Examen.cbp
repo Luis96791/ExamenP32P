@@ -40,6 +40,14 @@
 			<Add library="sfml-system" />
 			<Add directory="C:/SFML-2.1/lib" />
 		</Linker>
+		<Unit filename="Apoyoaprendizaje.cpp" />
+		<Unit filename="Apoyoaprendizaje.h" />
+		<Unit filename="Aspecto.cpp" />
+		<Unit filename="Aspecto.h" />
+		<Unit filename="Utility.cpp" />
+		<Unit filename="Utility.h" />
+		<Unit filename="VerApoyoAprendizaje.cpp" />
+		<Unit filename="VerApoyoAprendizaje.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

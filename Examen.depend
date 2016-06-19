@@ -336,3 +336,38 @@
 	<string>
 	<vector>
 
+1466359703 source:c:\users\luis\desktop\examen\main.cpp
+	<SFML/Graphics.hpp>
+	"VerApoyoAprendizaje.h"
+	<iostream>
+
+1466356942 source:c:\users\luis\desktop\examen\aspecto.cpp
+	"Aspecto.h"
+
+1466356922 c:\users\luis\desktop\examen\aspecto.h
+	<iostream>
+
+1466356809 source:c:\users\luis\desktop\examen\apoyoaprendizaje.cpp
+	"Apoyoaprendizaje.h"
+
+1466370386 c:\users\luis\desktop\examen\apoyoaprendizaje.h
+	<iostream>
+	<stdlib.h>
+	"Aspecto.h"
+	"Utility.h"
+
+1466371864 source:c:\users\luis\desktop\examen\verapoyoaprendizaje.cpp
+	"VerApoyoAprendizaje.h"
+	<SFML/Graphics.hpp>
+
+1466367660 c:\users\luis\desktop\examen\verapoyoaprendizaje.h
+	"Apoyoaprendizaje.h"
+	<iostream>
+
+1466369551 c:\users\luis\desktop\examen\utility.h
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1466369486 source:c:\users\luis\desktop\examen\utility.cpp
+	"Utility.h"
+
