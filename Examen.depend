@@ -336,31 +336,32 @@
 	<string>
 	<vector>
 
-1466359703 source:c:\users\luis\desktop\examen\main.cpp
+1466445867 source:c:\users\luis\desktop\examen\main.cpp
 	<SFML/Graphics.hpp>
 	"VerApoyoAprendizaje.h"
+	"Aspecto.h"
 	<iostream>
 
 1466356942 source:c:\users\luis\desktop\examen\aspecto.cpp
 	"Aspecto.h"
 
-1466356922 c:\users\luis\desktop\examen\aspecto.h
+1466444665 c:\users\luis\desktop\examen\aspecto.h
 	<iostream>
 
-1466356809 source:c:\users\luis\desktop\examen\apoyoaprendizaje.cpp
+1466444697 source:c:\users\luis\desktop\examen\apoyoaprendizaje.cpp
 	"Apoyoaprendizaje.h"
 
-1466370386 c:\users\luis\desktop\examen\apoyoaprendizaje.h
+1466444680 c:\users\luis\desktop\examen\apoyoaprendizaje.h
 	<iostream>
 	<stdlib.h>
 	"Aspecto.h"
 	"Utility.h"
 
-1466371864 source:c:\users\luis\desktop\examen\verapoyoaprendizaje.cpp
+1466455996 source:c:\users\luis\desktop\examen\verapoyoaprendizaje.cpp
 	"VerApoyoAprendizaje.h"
 	<SFML/Graphics.hpp>
 
-1466367660 c:\users\luis\desktop\examen\verapoyoaprendizaje.h
+1466455975 c:\users\luis\desktop\examen\verapoyoaprendizaje.h
 	"Apoyoaprendizaje.h"
 	<iostream>
 

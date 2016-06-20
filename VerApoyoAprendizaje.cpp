@@ -25,19 +25,26 @@ string VerApoyoAprendizaje::mostrarDescripcion(int c,string ac_descripcion)
     return ac_descripcion;
 }
 
+int VerApoyoAprendizaje::devolverIngreso(sf::String ingreso)
+{
+    string convert;
+    convert = ingreso;
+    return atoi(convert.c_str());
+}
+
 int VerApoyoAprendizaje::ventana(){
     sf::RenderWindow window;
-    sf::Texture texture, text_ingreso1, text_ingreso2, text_ingreso3, text_ingreso4, text_ingreso5, text_ingreso6;
-    sf::Sprite sprite, back_ingreso1, back_ingreso2, back_ingreso3, back_ingreso4, back_ingreso5, back_ingreso6;
-    sf::Text txt_Title, txt_puntuar, txt_descripcion, txt_ingreso1, txt_ingreso2, txt_ingreso3, txt_ingreso4, txt_ingreso5, txt_ingreso6,txt_calif;
+    sf::Texture texture, text_ingreso1, text_ingreso2, text_ingreso3, text_ingreso4, text_ingreso5, text_ingreso6,text_enviar,text_blockenviar;
+    sf::Sprite sprite, back_ingreso1, back_ingreso2, back_ingreso3, back_ingreso4, back_ingreso5, back_ingreso6,back_enviar,back_blockenviar;
+    sf::Text txt_Title, txt_puntuar, txt_descripcion, txt_ingreso1, txt_ingreso2, txt_ingreso3, txt_ingreso4, txt_ingreso5, txt_ingreso6;
     sf::Font font;
     sf::Vector2f mouse;
-    sf::String ingreso1, ingreso2, ingreso3, ingreso4, ingreso5, ingreso6, calif;
+    sf::String ingreso1, ingreso2, ingreso3, ingreso4, ingreso5, ingreso6;
     bool is_pressed1 = false,is_pressed2 = false,is_pressed3 = false,is_pressed4 = false,is_pressed5 = false,is_pressed6 = false;
     string convert, ac_descripcion="";
     int acumulador=0;
 
-    window.create(sf::VideoMode(650, 550), "SFML works!");
+    window.create(sf::VideoMode(650, 550), "Apoyo en el Aprendizaje");
     window.setPosition(sf::Vector2i(0,0));
     font.loadFromFile("arial.ttf");
 
@@ -61,6 +68,12 @@ int VerApoyoAprendizaje::ventana(){
     text_ingreso6.loadFromFile("ventanas/ingreso.png");
     back_ingreso6.setTexture(text_ingreso6);
     back_ingreso6.setPosition(500,415);
+    text_blockenviar.loadFromFile("ventanas/block_enviar.png");
+    back_blockenviar.setTexture(text_blockenviar);
+    back_blockenviar.setPosition(470,470);
+    text_enviar.loadFromFile("ventanas/enviar.png");
+    back_enviar.setTexture(text_enviar);
+    back_enviar.setPosition(-100,-100);
 
     txt_descripcion.setFont(font);
     txt_descripcion.setCharacterSize(18);
@@ -80,9 +93,9 @@ int VerApoyoAprendizaje::ventana(){
     txt_ingreso4.setFont(font);txt_ingreso4.setCharacterSize(20);txt_ingreso4.setColor(sf::Color::Black);txt_ingreso4.setPosition(505,313);
     txt_ingreso5.setFont(font);txt_ingreso5.setCharacterSize(20);txt_ingreso5.setColor(sf::Color::Black);txt_ingreso5.setPosition(505,353);
     txt_ingreso6.setFont(font);txt_ingreso6.setCharacterSize(20);txt_ingreso6.setColor(sf::Color::Black);txt_ingreso6.setPosition(505,418);
-    txt_calif.setFont(font);txt_calif.setCharacterSize(24);txt_calif.setColor(sf::Color::Black);txt_calif.setPosition(450,510);
 
     llenarDescripcion();
+    int s =0;
 
     while (window.isOpen())
     {
@@ -98,43 +111,37 @@ int VerApoyoAprendizaje::ventana(){
                 if(is_pressed1){
                     ingreso1.insert(ingreso1.getSize(),event.text.unicode);
                     txt_ingreso1.setString(ingreso1);
-                    convert = ingreso1;
-                    acumulador+=atoi(convert.c_str());
+                    acumulador+=devolverIngreso(ingreso1);
                     is_pressed1 = false;
                 }
                 if(is_pressed2){
                     ingreso2.insert(ingreso2.getSize(),event.text.unicode);
                     txt_ingreso2.setString(ingreso2);
-                    convert = ingreso2;
-                    acumulador+=atoi(convert.c_str());
+                    acumulador+=devolverIngreso(ingreso2);
                     is_pressed2 = false;
                 }
                 if(is_pressed3){
                     ingreso3.insert(ingreso3.getSize(),event.text.unicode);
                     txt_ingreso3.setString(ingreso3);
-                    convert = ingreso3;
-                    acumulador+=atoi(convert.c_str());
+                    acumulador+=devolverIngreso(ingreso3);
                     is_pressed3 = false;
                 }
                 if(is_pressed4){
                     ingreso4.insert(ingreso4.getSize(),event.text.unicode);
                     txt_ingreso4.setString(ingreso4);
-                    convert = ingreso4;
-                    acumulador+=atoi(convert.c_str());
+                    acumulador+=devolverIngreso(ingreso4);
                     is_pressed4 = false;
                 }
                 if(is_pressed5){
                     ingreso5.insert(ingreso5.getSize(),event.text.unicode);
                     txt_ingreso5.setString(ingreso5);
-                    convert = ingreso5;
-                    acumulador+=atoi(convert.c_str());
+                    acumulador+=devolverIngreso(ingreso5);
                     is_pressed5 = false;
                 }
                  if(is_pressed6){
                     ingreso6.insert(ingreso6.getSize(),event.text.unicode);
                     txt_ingreso6.setString(ingreso6);
-                    convert = ingreso6;
-                    acumulador+=atoi(convert.c_str());
+                    acumulador+=devolverIngreso(ingreso6);
                     is_pressed6 = false;
                 }
             }
@@ -147,13 +154,16 @@ int VerApoyoAprendizaje::ventana(){
         if(utility.clickSprite(back_ingreso5,mouse)){is_pressed5 = true;}
         if(utility.clickSprite(back_ingreso6,mouse)){is_pressed6 = true;}
 
+        if(!ingreso1.isEmpty()&&!ingreso2.isEmpty()&&!ingreso3.isEmpty()&&!ingreso4.isEmpty()&&!ingreso5.isEmpty()&&!ingreso6.isEmpty()){
+            back_enviar.setPosition(470,470);
+            if(utility.clickSprite(back_enviar,mouse)){
+                window.close();
+            }
+        }
+
         txt_Title.setString("APOYO EN EL APRENDIZAJE");
         txt_puntuar.setString("En la casilla ingrese la frecuencia con la que usted \nrealiza las siguientes actividades\nSiempre: 4 puntos\tCasi siempre: 3 puntos\tRegularmente: 2 puntos\nA veces: 1 puntos\tNunca: 0 puntos");
         txt_descripcion.setString(mostrarDescripcion(0,ac_descripcion));
-
-        if(!ingreso1.isEmpty()&&!ingreso2.isEmpty()&&!ingreso3.isEmpty()&&!ingreso4.isEmpty()&&!ingreso5.isEmpty()&&!ingreso6.isEmpty()){
-            txt_calif.setString(utility.toString(acumulador));
-        }
 
         window.draw(sprite);
         window.draw(txt_Title);
@@ -171,7 +181,8 @@ int VerApoyoAprendizaje::ventana(){
         window.draw(txt_ingreso4);
         window.draw(txt_ingreso5);
         window.draw(txt_ingreso6);
-        window.draw(txt_calif);
+        window.draw(back_blockenviar);
+        window.draw(back_enviar);
         window.display();
     }
     return acumulador;
