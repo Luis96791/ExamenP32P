@@ -11,10 +11,6 @@ class ApoyoAprendizaje : public Aspecto
 {
     public:
         ApoyoAprendizaje();
-        string getDescripcion();
-        void setDescripcion(string d);
-        int getNumAspecto();
-        void setNumAspecto(int n);
         int getPuntos();
         void setPuntos(int p);
         virtual ~ApoyoAprendizaje();

@@ -8,10 +8,6 @@ class Aspecto
 {
     public:
         Aspecto();
-        virtual string getDescripcion()=0;
-        virtual void setDescripcion(string d)=0;
-        virtual int getNumAspecto()=0;
-        virtual void setNumAspecto(int n)=0;
         virtual int getPuntos()=0;
         virtual void setPuntos(int p)=0;
         virtual ~Aspecto();

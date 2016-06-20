@@ -14,6 +14,7 @@ class VerApoyoAprendizaje
         string descripcion[6];
         string mostrarDescripcion(int c,string ac_des);
         void llenarDescripcion();
+        int devolverIngreso(sf::String ingreso);
         int ventana();
         virtual ~VerApoyoAprendizaje();
     protected:
