@@ -1,16 +1,20 @@
 #include <SFML/Graphics.hpp>
 #include "VerApoyoAprendizaje.h"
+#include "Aspecto.h"
 #include <iostream>
 
 using namespace std;
 
 int main()
 {
+    Aspecto *aspecto;
     ApoyoAprendizaje apoyoAprendizaje;
+    aspecto = &apoyoAprendizaje;
+
     VerApoyoAprendizaje verApoyoAprendizaje;
 
-    apoyoAprendizaje.setPuntos(verApoyoAprendizaje.ventana());
-    cout<<apoyoAprendizaje.getPuntos()<<endl;
+    aspecto->setPuntos(verApoyoAprendizaje.ventana());
+    cout<<aspecto->getPuntos()<<endl;
 
 //    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
 //    sf::CircleShape shape(100.f);

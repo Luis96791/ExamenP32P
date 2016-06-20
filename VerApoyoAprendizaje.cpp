@@ -16,12 +16,11 @@ void VerApoyoAprendizaje::llenarDescripcion()
     descripcion[5]="6. Cuando obtiene bajas calificaciones \n    pienso que yo tambien soy responsable..........\n";
 }
 
-string VerApoyoAprendizaje::mostrarDescripcion()
+string VerApoyoAprendizaje::mostrarDescripcion(int c,string ac_descripcion)
 {
-    int c = 0;
-    string ac_descripcion;
-    for(int c = 0; c < 6;c++){
+    if(c < 6){
         ac_descripcion+=descripcion[c]+"\n";
+        return mostrarDescripcion(c+1,ac_descripcion);
     }
     return ac_descripcion;
 }
@@ -35,7 +34,7 @@ int VerApoyoAprendizaje::ventana(){
     sf::Vector2f mouse;
     sf::String ingreso1, ingreso2, ingreso3, ingreso4, ingreso5, ingreso6, calif;
     bool is_pressed1 = false,is_pressed2 = false,is_pressed3 = false,is_pressed4 = false,is_pressed5 = false,is_pressed6 = false;
-    string convert;
+    string convert, ac_descripcion="";
     int acumulador=0;
 
     window.create(sf::VideoMode(650, 550), "SFML works!");
@@ -150,7 +149,7 @@ int VerApoyoAprendizaje::ventana(){
 
         txt_Title.setString("APOYO EN EL APRENDIZAJE");
         txt_puntuar.setString("En la casilla ingrese la frecuencia con la que usted \nrealiza las siguientes actividades\nSiempre: 4 puntos\tCasi siempre: 3 puntos\tRegularmente: 2 puntos\nA veces: 1 puntos\tNunca: 0 puntos");
-        txt_descripcion.setString(mostrarDescripcion());
+        txt_descripcion.setString(mostrarDescripcion(0,ac_descripcion));
 
         if(!ingreso1.isEmpty()&&!ingreso2.isEmpty()&&!ingreso3.isEmpty()&&!ingreso4.isEmpty()&&!ingreso5.isEmpty()&&!ingreso6.isEmpty()){
             txt_calif.setString(utility.toString(acumulador));

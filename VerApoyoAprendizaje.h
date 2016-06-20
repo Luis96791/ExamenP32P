@@ -12,7 +12,7 @@ class VerApoyoAprendizaje
         ApoyoAprendizaje apoyoAprendizaje;
         VerApoyoAprendizaje();
         string descripcion[6];
-        string mostrarDescripcion();
+        string mostrarDescripcion(int c,string ac_des);
         void llenarDescripcion();
         int ventana();
         virtual ~VerApoyoAprendizaje();
