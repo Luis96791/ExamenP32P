@@ -45,6 +45,7 @@ int VerApoyoAprendizaje::ventana(){
     int acumulador=0;
 
     window.create(sf::VideoMode(650, 550), "Apoyo en el Aprendizaje");
+    window.setVisible(true);
     window.setPosition(sf::Vector2i(0,0));
     font.loadFromFile("arial.ttf");
 
@@ -95,7 +96,7 @@ int VerApoyoAprendizaje::ventana(){
     txt_ingreso6.setFont(font);txt_ingreso6.setCharacterSize(20);txt_ingreso6.setColor(sf::Color::Black);txt_ingreso6.setPosition(505,418);
 
     llenarDescripcion();
-    int s =0;
+//    int s =0;
 
     while (window.isOpen())
     {
