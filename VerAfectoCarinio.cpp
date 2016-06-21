@@ -43,7 +43,7 @@ int VerAfectoCarinio::ventana(){
     string convert, ac_descripcion="";
     int acumulador=0;
 
-    window.create(sf::VideoMode(650, 550), "Apoyo en el Aprendizaje");
+    window.create(sf::VideoMode(650, 550), "Afecto y Cariño");
     window.setPosition(sf::Vector2i(0,0));
     font.loadFromFile("arial.ttf");
 

@@ -44,7 +44,7 @@ int VerAtencionTiempo::ventana()
     string convert, ac_descripcion="";
     int acumulador=0;
 
-    window.create(sf::VideoMode(650, 550), "Apoyo en el Aprendizaje");
+    window.create(sf::VideoMode(650, 550), "Atención y Tiempo Compartido");
     window.setPosition(sf::Vector2i(0,0));
     font.loadFromFile("arial.ttf");
 
