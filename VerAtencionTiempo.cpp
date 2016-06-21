@@ -122,13 +122,13 @@ int VerAtencionTiempo::ventana()
                 if(is_pressed3){
                     ingreso3.insert(ingreso3.getSize(),event.text.unicode);
                     txt_ingreso3.setString(ingreso3);
-                    acumulador+=devolverIngreso(ingreso3);
+                    acumulador+=devolverIngreso(ingreso3)+1;
                     is_pressed3 = false;
                 }
                 if(is_pressed4){
                     ingreso4.insert(ingreso4.getSize(),event.text.unicode);
                     txt_ingreso4.setString(ingreso4);
-                    acumulador+=devolverIngreso(ingreso4);
+                    acumulador+=devolverIngreso(ingreso4)+1;
                     is_pressed4 = false;
                 }
                 if(is_pressed5){

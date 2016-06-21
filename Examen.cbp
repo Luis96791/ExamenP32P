@@ -50,6 +50,8 @@
 		<Unit filename="Aspecto.h" />
 		<Unit filename="AtencionTiempo.cpp" />
 		<Unit filename="AtencionTiempo.h" />
+		<Unit filename="Comunicacion.cpp" />
+		<Unit filename="Comunicacion.h" />
 		<Unit filename="Utility.cpp" />
 		<Unit filename="Utility.h" />
 		<Unit filename="VerAfectoCarinio.cpp" />
@@ -58,6 +60,8 @@
 		<Unit filename="VerApoyoAprendizaje.h" />
 		<Unit filename="VerAtencionTiempo.cpp" />
 		<Unit filename="VerAtencionTiempo.h" />
+		<Unit filename="VerComunicacion.cpp" />
+		<Unit filename="VerComunicacion.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

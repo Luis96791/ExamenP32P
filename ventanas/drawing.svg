@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="81.31505"
-     inkscape:cy="6.536744"
+     inkscape:zoom="0.175"
+     inkscape:cx="303.81318"
+     inkscape:cy="283.44966"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -163,6 +163,116 @@
        height="680"
        x="-1019.2858"
        y="666.64789"
+       ry="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <rect
+       style="opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3336-6-6"
+       width="500"
+       height="500"
+       x="569.28571"
+       y="1229.505"
+       ry="0"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <g
+       id="g4171-6"
+       transform="matrix(0.59868422,0,0,0.69790399,196.39012,102.8854)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <g
+         id="g3418"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <rect
+           style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect4135-2"
+           width="217.14285"
+           height="85.97171"
+           x="94.88797"
+           y="482.32822"
+           ry="20.483984" />
+        <flowRoot
+           xml:space="preserve"
+           id="flowRoot4139-5-9"
+           style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           transform="matrix(1.2760026,0,0,2.1758681,-78.647586,-598.23409)"><flowRegion
+             id="flowRegion4141-9-5"><rect
+               id="rect4143-9-7"
+               width="158.38361"
+               height="29.683065"
+               x="145.46196"
+               y="500.81891"
+               style="fill:#333333" /></flowRegion><flowPara
+             id="flowPara4145-2-8"
+             style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#333333">COMENZAR</flowPara></flowRoot>        <flowRoot
+           xml:space="preserve"
+           id="flowRoot4139-0"
+           style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           transform="matrix(1.2760026,0,0,2.1758681,-74.874218,-600.39141)"><flowRegion
+             id="flowRegion4141-3"><rect
+               id="rect4143-3"
+               width="205.95607"
+               height="44.407574"
+               x="145.46196"
+               y="500.81891"
+               style="fill:#f9f9f9" /></flowRegion><flowPara
+             id="flowPara3414"
+             style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9">COMENZAR</flowPara></flowRoot>      </g>
+      <g
+         transform="translate(7.5927952,117.24013)"
+         id="g3418-6"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <g
+           id="g3475"
+           inkscape:export-xdpi="90"
+           inkscape:export-ydpi="90">
+          <rect
+             ry="20.483984"
+             y="470.74893"
+             x="84.764244"
+             height="85.97171"
+             width="217.14285"
+             id="rect4135-2-7"
+             style="opacity:1;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <flowRoot
+             transform="matrix(1.5162956,0,0,2.3558382,-92.320117,-705.68096)"
+             style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#333333;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="flowRoot4139-5-9-9"
+             xml:space="preserve"><flowRegion
+               id="flowRegion4141-9-5-5"><rect
+                 style="fill:#333333"
+                 y="500.81891"
+                 x="145.46196"
+                 height="29.683065"
+                 width="158.38361"
+                 id="rect4143-9-7-2" /></flowRegion><flowPara
+               style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#333333"
+               id="flowPara4145-2-8-3">SALIR</flowPara></flowRoot>          <flowRoot
+             transform="matrix(1.5162956,0,0,2.3558382,-88.838677,-706.0578)"
+             style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#f9f9f9;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             id="flowRoot4139-0-9"
+             xml:space="preserve"><flowRegion
+               id="flowRegion4141-3-6"><rect
+                 style="fill:#f9f9f9"
+                 y="500.81891"
+                 x="145.46196"
+                 height="44.407574"
+                 width="205.95607"
+                 id="rect4143-3-8" /></flowRegion><flowPara
+               id="flowPara3471"
+               style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:25px;line-height:125%;font-family:'Comic Sans MS';-inkscape-font-specification:'Comic Sans MS, Bold Italic';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#f9f9f9">SALIR</flowPara></flowRoot>        </g>
+      </g>
+    </g>
+    <rect
+       style="opacity:1;fill:#00ffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect3336-6-6-6"
+       width="600"
+       height="400"
+       x="621.26453"
+       y="505.65005"
        ry="0"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />

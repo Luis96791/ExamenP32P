@@ -336,11 +336,12 @@
 	<string>
 	<vector>
 
-1466460530 source:c:\users\luis\desktop\examen\main.cpp
+1466524698 source:c:\users\luis\desktop\examen\main.cpp
 	<SFML/Graphics.hpp>
 	"VerApoyoAprendizaje.h"
 	"VerAtencionTiempo.h"
 	"VerAfectoCarinio.h"
+	"VerComunicacion.h"
 	"Aspecto.h"
 	<iostream>
 
@@ -359,7 +360,7 @@
 	"Aspecto.h"
 	"Utility.h"
 
-1466457384 source:c:\users\luis\desktop\examen\verapoyoaprendizaje.cpp
+1466521552 source:c:\users\luis\desktop\examen\verapoyoaprendizaje.cpp
 	"VerApoyoAprendizaje.h"
 
 1466457384 c:\users\luis\desktop\examen\verapoyoaprendizaje.h
@@ -797,7 +798,7 @@
 	"Aspecto.h"
 	"Utility.h"
 
-1466473396 source:c:\users\luis\desktop\examen\veratenciontiempo.cpp
+1466521490 source:c:\users\luis\desktop\examen\veratenciontiempo.cpp
 	"VerAtencionTiempo.h"
 
 1466457441 c:\users\luis\desktop\examen\veratenciontiempo.h
@@ -813,11 +814,27 @@
 	"Aspecto.h"
 	"Utility.h"
 
-1466473356 source:c:\users\luis\desktop\examen\verafectocarinio.cpp
+1466521521 source:c:\users\luis\desktop\examen\verafectocarinio.cpp
 	"VerAfectoCarinio.h"
 
 1466460320 c:\users\luis\desktop\examen\verafectocarinio.h
 	"AfectoCarinio.h"
 	<SFML/Graphics.hpp>
 	<iostream>
+
+1466478533 source:c:\users\luis\desktop\examen\comunicacion.cpp
+	"Comunicacion.h"
+
+1466478451 c:\users\luis\desktop\examen\comunicacion.h
+	<iostream>
+	<stdlib.h>
+	"Aspecto.h"
+	"Utility.h"
+
+1466480376 c:\users\luis\desktop\examen\vercomunicacion.h
+	"Comunicacion.h"
+	<iostream>
+
+1466521346 source:c:\users\luis\desktop\examen\vercomunicacion.cpp
+	"VerComunicacion.h"
 

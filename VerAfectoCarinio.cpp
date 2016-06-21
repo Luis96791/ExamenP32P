@@ -115,7 +115,7 @@ int VerAfectoCarinio::ventana(){
                 if(is_pressed2){
                     ingreso2.insert(ingreso2.getSize(),event.text.unicode);
                     txt_ingreso2.setString(ingreso2);
-                    acumulador+=devolverIngreso(ingreso2);
+                    acumulador+=devolverIngreso(ingreso2)+1;
                     is_pressed2 = false;
                 }
                 if(is_pressed3){
@@ -127,7 +127,7 @@ int VerAfectoCarinio::ventana(){
                 if(is_pressed4){
                     ingreso4.insert(ingreso4.getSize(),event.text.unicode);
                     txt_ingreso4.setString(ingreso4);
-                    acumulador+=devolverIngreso(ingreso4);
+                    acumulador+=devolverIngreso(ingreso4)+1;
                     is_pressed4 = false;
                 }
                 if(is_pressed5){
