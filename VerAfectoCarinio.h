@@ -1,26 +1,27 @@
-#ifndef VERAPOYOAPRENDIZAJE_H
-#define VERAPOYOAPRENDIZAJE_H
-#include "Apoyoaprendizaje.h"
+#ifndef VERAFECTOCARINIO_H
+#define VERAFECTOCARINIO_H
+#include "AfectoCarinio.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
 using namespace std;
 
-class VerApoyoAprendizaje
+class VerAfectoCarinio
 {
     public:
         Utility utility;
-        ApoyoAprendizaje apoyoAprendizaje;
-        VerApoyoAprendizaje();
+        AfectoCarinio afectoCarinio;
+        VerAfectoCarinio();
         string descripcion[6];
         string mostrarDescripcion(int c,string ac_des);
         void llenarDescripcion();
         int devolverIngreso(sf::String ingreso);
         int ventana();
-        virtual ~VerApoyoAprendizaje();
+        virtual ~VerAfectoCarinio();
+
     protected:
 
     private:
 };
 
-#endif // VERAPOYOAPRENDIZAJE_H
+#endif // VERAFECTOCARINIO_H
