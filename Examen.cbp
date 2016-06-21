@@ -33,21 +33,31 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 			<Add directory="C:/Users/user/Documents/SFML-2.3.2/include" />
+			<Add directory="C:/SFML-2.1/include" />
 		</Compiler>
 		<Linker>
 			<Add library="sfml-graphics" />
 			<Add library="sfml-window" />
 			<Add library="sfml-system" />
 			<Add directory="C:/Users/user/Documents/SFML-2.3.2/lib" />
+			<Add directory="C:/SFML-2.1/lib" />
 		</Linker>
+		<Unit filename="AfectoCarinio.cpp" />
+		<Unit filename="AfectoCarinio.h" />
 		<Unit filename="Apoyoaprendizaje.cpp" />
 		<Unit filename="Apoyoaprendizaje.h" />
 		<Unit filename="Aspecto.cpp" />
 		<Unit filename="Aspecto.h" />
+		<Unit filename="AtencionTiempo.cpp" />
+		<Unit filename="AtencionTiempo.h" />
 		<Unit filename="Utility.cpp" />
 		<Unit filename="Utility.h" />
+		<Unit filename="VerAfectoCarinio.cpp" />
+		<Unit filename="VerAfectoCarinio.h" />
 		<Unit filename="VerApoyoAprendizaje.cpp" />
 		<Unit filename="VerApoyoAprendizaje.h" />
+		<Unit filename="VerAtencionTiempo.cpp" />
+		<Unit filename="VerAtencionTiempo.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />

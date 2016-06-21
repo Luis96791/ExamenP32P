@@ -1,5 +1,5 @@
-#ifndef APOYOAPRENDIZAJE_H
-#define APOYOAPRENDIZAJE_H
+#ifndef ATENCIONTIEMPO_H
+#define ATENCIONTIEMPO_H
 #include <iostream>
 #include <stdlib.h>
 #include "Aspecto.h"
@@ -7,13 +7,13 @@
 
 using namespace std;
 
-class ApoyoAprendizaje : public Aspecto
+class AtencionTiempo : public Aspecto
 {
     public:
-        ApoyoAprendizaje();
+        AtencionTiempo();
         int getPuntos();
         void setPuntos(int p);
-        virtual ~ApoyoAprendizaje();
+        virtual ~AtencionTiempo();
 
     protected:
 
@@ -21,4 +21,4 @@ class ApoyoAprendizaje : public Aspecto
         int puntos;
 };
 
-#endif // APOYOAPRENDIZAJE_H
+#endif // ATENCIONTIEMPO_H

@@ -1,21 +1,21 @@
-#include "VerApoyoAprendizaje.h"
+#include "VerAtencionTiempo.h"
 
-VerApoyoAprendizaje::VerApoyoAprendizaje()
+VerAtencionTiempo::VerAtencionTiempo()
 {
     //ctor
 }
 
-void VerApoyoAprendizaje::llenarDescripcion()
+void VerAtencionTiempo::llenarDescripcion()
 {
-    descripcion[0]="1. Asisto a todas las reuniones de la escuela..........\n";
-    descripcion[1]="2. Voy a la escuela una vez a la semana para \n    preguntar sobre el aprendizaje de mi hijo/a..........\n";
-    descripcion[2]="3. Reviso diariamente las libretas de mi hijo/a..........\n";
-    descripcion[3]="4. Apoyo diariamente a mi hijo/a con su tarea..........\n";
-    descripcion[4]="5. Le pregunto cuales temas se le complican..........\n";
-    descripcion[5]="6. Cuando obtiene bajas calificaciones \n    pienso que yo tambien soy responsable..........\n";
+    descripcion[0]="1. Voy diariamente a dejar y recoger a mi hijo/a\n    a la escuela..........\n";
+    descripcion[1]="2. Juego con el dos veces a la semana..........\n";
+    descripcion[2]="3. Le leo un cuento cada semana..........\n";
+    descripcion[3]="4. Salimos de paseo  en familia \n    una vez a la semana ..........\n";
+    descripcion[4]="5. Le pregunto diariamente como estuvo su dia..........\n";
+    descripcion[5]="6. Cuando me pide tiempo para platicar lo \n    hago sin ningun pretexto..........\n";
 }
 
-string VerApoyoAprendizaje::mostrarDescripcion(int c,string ac_descripcion)
+string VerAtencionTiempo::mostrarDescripcion(int c,string ac_descripcion)
 {
     if(c < 6){
         ac_descripcion+=descripcion[c]+"\n";
@@ -24,14 +24,15 @@ string VerApoyoAprendizaje::mostrarDescripcion(int c,string ac_descripcion)
     return ac_descripcion;
 }
 
-int VerApoyoAprendizaje::devolverIngreso(sf::String ingreso)
+int VerAtencionTiempo::devolverIngreso(sf::String ingreso)
 {
     string convert;
     convert = ingreso;
     return atoi(convert.c_str());
 }
 
-int VerApoyoAprendizaje::ventana(){
+int VerAtencionTiempo::ventana()
+{
     sf::RenderWindow window;
     sf::Texture texture, text_ingreso1, text_ingreso2, text_ingreso3, text_ingreso4, text_ingreso5, text_ingreso6,text_enviar,text_blockenviar;
     sf::Sprite sprite, back_ingreso1, back_ingreso2, back_ingreso3, back_ingreso4, back_ingreso5, back_ingreso6,back_enviar,back_blockenviar;
@@ -47,11 +48,11 @@ int VerApoyoAprendizaje::ventana(){
     window.setPosition(sf::Vector2i(0,0));
     font.loadFromFile("arial.ttf");
 
-    texture.loadFromFile("ventanas/background.png");
+    texture.loadFromFile("ventanas/background1.png");
     sprite.setTexture(texture);
     text_ingreso1.loadFromFile("ventanas/ingreso.png");
     back_ingreso1.setTexture(text_ingreso1);
-    back_ingreso1.setPosition(500,160);
+    back_ingreso1.setPosition(500,180);
     text_ingreso2.loadFromFile("ventanas/ingreso.png");
     back_ingreso2.setTexture(text_ingreso2);
     back_ingreso2.setPosition(500,225);
@@ -60,13 +61,13 @@ int VerApoyoAprendizaje::ventana(){
     back_ingreso3.setPosition(500,265);
     text_ingreso4.loadFromFile("ventanas/ingreso.png");
     back_ingreso4.setTexture(text_ingreso4);
-    back_ingreso4.setPosition(500,310);
+    back_ingreso4.setPosition(500,330);
     text_ingreso5.loadFromFile("ventanas/ingreso.png");
     back_ingreso5.setTexture(text_ingreso5);
-    back_ingreso5.setPosition(500,350);
+    back_ingreso5.setPosition(500,375);
     text_ingreso6.loadFromFile("ventanas/ingreso.png");
     back_ingreso6.setTexture(text_ingreso6);
-    back_ingreso6.setPosition(500,415);
+    back_ingreso6.setPosition(500,440);
     text_blockenviar.loadFromFile("ventanas/block_enviar.png");
     back_blockenviar.setTexture(text_blockenviar);
     back_blockenviar.setPosition(470,470);
@@ -86,12 +87,12 @@ int VerApoyoAprendizaje::ventana(){
     txt_Title.setCharacterSize(24);
     txt_Title.setStyle(sf::Text::Underlined);
     txt_Title.setPosition(120,30);
-    txt_ingreso1.setFont(font);txt_ingreso1.setCharacterSize(20);txt_ingreso1.setColor(sf::Color::Black);txt_ingreso1.setPosition(505,163);
+    txt_ingreso1.setFont(font);txt_ingreso1.setCharacterSize(20);txt_ingreso1.setColor(sf::Color::Black);txt_ingreso1.setPosition(505,183);
     txt_ingreso2.setFont(font);txt_ingreso2.setCharacterSize(20);txt_ingreso2.setColor(sf::Color::Black);txt_ingreso2.setPosition(505,228);
-    txt_ingreso3.setFont(font);txt_ingreso3.setCharacterSize(20);txt_ingreso3.setColor(sf::Color::Black);txt_ingreso3.setPosition(505,269);
-    txt_ingreso4.setFont(font);txt_ingreso4.setCharacterSize(20);txt_ingreso4.setColor(sf::Color::Black);txt_ingreso4.setPosition(505,313);
-    txt_ingreso5.setFont(font);txt_ingreso5.setCharacterSize(20);txt_ingreso5.setColor(sf::Color::Black);txt_ingreso5.setPosition(505,353);
-    txt_ingreso6.setFont(font);txt_ingreso6.setCharacterSize(20);txt_ingreso6.setColor(sf::Color::Black);txt_ingreso6.setPosition(505,418);
+    txt_ingreso3.setFont(font);txt_ingreso3.setCharacterSize(20);txt_ingreso3.setColor(sf::Color::Black);txt_ingreso3.setPosition(505,268);
+    txt_ingreso4.setFont(font);txt_ingreso4.setCharacterSize(20);txt_ingreso4.setColor(sf::Color::Black);txt_ingreso4.setPosition(505,333);
+    txt_ingreso5.setFont(font);txt_ingreso5.setCharacterSize(20);txt_ingreso5.setColor(sf::Color::Black);txt_ingreso5.setPosition(505,378);
+    txt_ingreso6.setFont(font);txt_ingreso6.setCharacterSize(20);txt_ingreso6.setColor(sf::Color::Black);txt_ingreso6.setPosition(505,443);
 
     llenarDescripcion();
 
@@ -159,7 +160,7 @@ int VerApoyoAprendizaje::ventana(){
             }
         }
 
-        txt_Title.setString("APOYO EN EL APRENDIZAJE");
+        txt_Title.setString("ATENCIÓN Y TIEMPO COMPARTIDO");
         txt_puntuar.setString("En la casilla ingrese la frecuencia con la que usted \nrealiza las siguientes actividades\nSiempre: 4 puntos\tCasi siempre: 3 puntos\tRegularmente: 2 puntos\nA veces: 1 puntos\tNunca: 0 puntos");
         txt_descripcion.setString(mostrarDescripcion(0,ac_descripcion));
 
@@ -186,7 +187,7 @@ int VerApoyoAprendizaje::ventana(){
     return acumulador;
 }
 
-VerApoyoAprendizaje::~VerApoyoAprendizaje()
+VerAtencionTiempo::~VerAtencionTiempo()
 {
     //dtor
 }

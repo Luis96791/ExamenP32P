@@ -1,26 +1,26 @@
-#ifndef VERAPOYOAPRENDIZAJE_H
-#define VERAPOYOAPRENDIZAJE_H
-#include "Apoyoaprendizaje.h"
-#include <SFML/Graphics.hpp>
+#ifndef VERATENCIONTIEMPO_H
+#define VERATENCIONTIEMPO_H
+#include "AtencionTiempo.h"
 #include <iostream>
 
 using namespace std;
 
-class VerApoyoAprendizaje
+class VerAtencionTiempo
 {
     public:
         Utility utility;
-        ApoyoAprendizaje apoyoAprendizaje;
-        VerApoyoAprendizaje();
+        AtencionTiempo atencionTiempo;
+        VerAtencionTiempo();
         string descripcion[6];
         string mostrarDescripcion(int c,string ac_des);
         void llenarDescripcion();
         int devolverIngreso(sf::String ingreso);
         int ventana();
-        virtual ~VerApoyoAprendizaje();
+        virtual ~VerAtencionTiempo();
+
     protected:
 
     private:
 };
 
-#endif // VERAPOYOAPRENDIZAJE_H
+#endif // VERATENCIONTIEMPO_H
